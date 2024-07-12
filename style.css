@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+    font-size: 25px;
+    direction: rtl;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    font-family: "Press Start 2P", system-ui;
+}
+
+div.instructions {
+    color: gray;
+    font-family: 'Open Sans';
+    margin: auto;
+    padding: 10px;
+
+}
+
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+div.game{
+    align-self: center;
+}
+
+input{
+    /*border: none;*/
+    background-color: white;
+    font-family: "Press Start 2P", system-ui;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    <!--FavIcon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Dino+</title>
+</head>
+
+<body>
+    <h1 id="header">+Dino</h1>
+    <div id="game" class="game">
+        <canvas id="game_canvas" width="600px" height="150px"></canvas>
+    </div>
+
+    <!--הוראות-->
+    <div class="instructions" id="instructions">
+        <p>אין אינטרנט</p>
+        <p>כדאי לנסות:</p>
+        <ul>
+            <li>ללחוץ על רווח ולהתחיל לשחק!</li>
+            <li>להימנע מלגעת בקקטוסים ובציפורים הרעים</li>
+            <li><font color="blue">קקטוס כחול</font> - אי אפשר למות ל-5 שניות</li>
+            <li><font color="red">קקטוס אדום</font> - יכולת לירות לייזרים עם המקש k</li>
+        </ul>
+    </div>
+
+    <!--Audios-->
+    <audio id="jump">
+        <source src="assets/sounds/jump.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="game_over">
+        <source src="assets/sounds/game_over.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="shoot">
+        <source src="assets/sounds/shoot.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="explode">
+        <source src="assets/sounds/explode.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="immortal">
+        <source src="assets/sounds/immortal.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="laser_on">
+        <source src="assets/sounds/laser_on.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="laser_off">
+        <source src="assets/sounds/laser_off.mp3" type="audio/mpeg">
+    </audio>
+
+    <!--Scripts-->
+    <script type="text/javascript" src="scripts/functions.js"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+
+    <script type="text/javascript" src="scripts/classes/sprite.js"></script>
+    <script type="text/javascript" src="scripts/classes/ground.js"></script>
+    <script type="text/javascript" src="scripts/classes/dino.js"></script>
+    <script type="text/javascript" src="scripts/classes/enemy.js"></script>
+    <script type="text/javascript" src="scripts/classes/cactus.js"></script>
+    <script type="text/javascript" src="scripts/classes/bird.js"></script>
+    <script type="text/javascript" src="scripts/classes/cloud.js"></script>
+    <script type="text/javascript" src="scripts/classes/power.js"></script>
+    <script type="text/javascript" src="scripts/classes/laser.js"></script>
+</body>
+
+</html>
